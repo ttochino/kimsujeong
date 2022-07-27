@@ -1,0 +1,298 @@
+@font-face {
+  font-family: 'YeongdoOTF';
+  src: url('font/YeongdoOTF.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  flex: auto;
+  margin: 0;
+  border: 0;
+}
+
+.main {
+  width: 1fr;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  border: 0;
+  text-align: center;
+}
+
+img.title {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.line {
+  display: block;
+  width: 1fr;
+  height: 3px;
+  background-color: #069c99;
+  border: 0;
+  margin-top: 15px;
+}
+
+span {
+
+  font-family: AppleSDGothicNeo;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #505050;
+}
+
+.weather {
+  width: 74px;
+  height: 24px;
+  font-family: AppleSDGothicNeo;
+  line-height: 100%;
+  font-size: 20px;
+  color: #707070;
+}
+
+.temp {
+  width: 61px;
+  height: 38px;
+  font-family: AppleSDGothicNeo;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 100%;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #707070;
+}
+
+.container {
+  margin-top: 70px;
+  text-align: left;
+}
+
+.sun {
+  margin-left: 3px;
+  text-align: center;
+  width: 20px;
+  height: auto;
+}
+
+.yeongdo {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.yd {
+  width: 500px;
+  height: auto;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  column-gap: 11rem;
+}
+
+.allblock {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.block {
+    width: 150px;
+    height: 150px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+    list-style: none;
+}
+
+.block1 {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #1fc4ad;
+}
+
+.block2 {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #41d5cc;
+}
+
+.bbox {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-family: AppleSDGothicNeo;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+}
+
+.block1-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.block1-2 {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.m {
+  margin: 7px 10px 0 0;
+  width: 45px;
+  height: auto;
+}
+
+.bt1 {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-family: AppleSDGothicNeo;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+}
+
+.bt2 {
+  width: 1fr;
+  height: 38px;
+  margin-top: 0;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-family: AppleSDGothicNeo;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+.humidity {
+  margin-top: 10px;
+}
+
+.rain {
+  width: 40px;
+  height: auto;
+}
+
+.bt3 {
+  margin-top: 20px;
+}
+
+.bt4 {
+  margin-top: 7px;
+}
+
+.wind {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.w {
+  width: 80px;
+  height: 80px;
+  margin: 5px 0 5px 0;
+  text-align: center;
+}
+
+.linegraph {
+  margin-top: 5px;
+}
+
+
+@media screen and (max-width: 960px) {
+
+  .yeongdo {
+    margin-bottom: 10px;
+  }
+
+  .main {
+    width: 1fr;
+    margin: 15px 0 0 0;
+  }
+
+  .line {
+    margin-top: 5px;
+  }
+
+  img.title {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .top {
+    display: flex;
+    justify-content: center;
+    column-gap: 0;
+    line-height: 100%;
+  }
+
+  .yd {
+    width: 370px;
+    height: auto;
+  }
+
+  .weather {
+    font-size: 18px;
+  }
+
+  .temp {
+    font-size: 16px;
+
+  }
+
+  span {
+    font-size: 50px;
+    line-height: 120%;
+  }
+
+  .container {
+    margin-top: 50px;
+    text-align: left;
+
+  }
+
+  .sun {
+    margin-left: 3px;
+    text-align: center;
+    width: 15px;
+    height: auto;
+  }
+
+  .allblock {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .block1 {
+    flex-basis: 150px;
+    max-width: 150px;
+    margin: 3% 3% 3% 3%;
+    height: 150px;
+    flex: 0 0 50%;
+  }
+
+  .block2 {
+    flex-basis: 150px;
+    max-width: 150px;
+    margin: 3% 3% 3% 3%;
+    height: 150px;
+    flex: 0 0 50%;
+  }
+
+  .m {
+    margin: 3px 10px 0 0;
+    width: 45px;
+    height: auto;
+  }
+
+  .bt1 {
+    margin: 0;
+  }
+
+}

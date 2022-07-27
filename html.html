@@ -1,19 +1,111 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <title>html</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-  <h1>HTML</h1>
- <ol>
-  <li>html</li>
-  <li>CSS</li>
-  <li>JavaScriopt</li>
- </ol>
- <p>
-Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
- </p>
+<!--header component-->
+<header class="main">
+  <img src="img/title.png" class="title">
+  <div class="line"></div>
+</header>
+
+<main>
+  <div class="top">
+    <!--weather component-->
+    <div class="container">
+      <span class="weather">현재 날씨<img src="img/weather-icon/sun.png" class="sun"></br>
+        <span>18°</span></br>
+        <span class="temp">최저:14°</br>최고:21°</span>
+      </span>
+    </div>
+
+    <!--map component-->
+    <div class="yeongdo">
+      <img src="img/yeongdo/yeongdo4.png" class="yd" width="1667" height="1667">
+    </div>
+  </div>
+
+  <!--weather-information component-->
+  <ul class="allblock">
+    <li class="block block1">
+      <span class="bbox">미세먼지</span>
+      <div class="block1-1">
+        <div class="mask"><img src="img/mask/mask1.png" class="m"></div>
+        <span class="bt1">134</span>
+      </div>
+      <div class="bt2">꼭 마스크를 쓰고</br>외출하세요!</div>
+    </li>
+    <li class="block block1">
+      <span class="bbox">습도</span>
+      <div class="block1-2">
+        <div class="humidity"><img src="img/rain_.png" class="rain"><img src="img/rain_.png" class="rain"><img
+          src="img/rain_.png" class="rain"></div>
+      </div>
+      <div class="bt2 bt3">75%</div>
+    </li>
+    <li class="block block2">
+      <span class="bbox">풍향</span>
+      <div class="wind"><img src="img/wind-direction/02_ne.png" class="w"></div>
+      <div class="bt2 bt4">북동향</div>
+    </li>
+    <li class="block block2">
+      <span class="bbox">풍속</span>
+      <div class="linegraph">
+        <div style="width:100%;">
+          <canvas id="myChart" width="400" height="260"></canvas>
+          <script>
+            const labels = [
+              '1',
+              '2',
+              '3',
+              '4',
+              '5',
+              '6',
+            ];
+
+            const data = {
+              labels: labels,
+              datasets: [{
+                label: 'm/s',
+                backgroundColor: '#ffffff',
+                borderColor: '#ffffff',
+                data: [0, 10, 5, 2, 20, 15, 11],
+              }]
+            };
+
+            const config = {
+              type: 'line',
+              data: data,
+              options: {}
+            };
+          </script>
+          <script>
+            const myChart = new Chart(
+              document.getElementById('myChart'),
+              config
+            );
+          </script>
+        </div>
+        <div class="bt2">11m/s</div>
+      </div>
+    </li>
+  </ul>
+</main>
 </body>
 </html>
+
+// react 컴포넌트 만드는 방법
+// react 컴포넌트 구조 파악
+// html 태그 비교
+// css 비교
+
+// react-query
+// dummy data <- 가짜 데이터. api 구조를 yugesh 한테 만들어달라고 해야 됨.
